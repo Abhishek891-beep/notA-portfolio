@@ -6,7 +6,6 @@ function Page() {
   const [read ,setRead] = useState(false);
   const [read2 ,setReadd] = useState(false);
 
-
   const handler = ()=> {
     setRead(!read);
   }
@@ -15,10 +14,8 @@ function Page() {
     setReadd(!read2)
   }
 
-
   return (
     <>
-    
     <div  style={{ backgroundImage: `url("/sj1.jpg")`}} className='w-screen h-screen md:bg-contain  bg-center p-20  flex flex-col items-center  '>
         <div className='bg-transparent flex rounded-xl p-1 justify-between  w-full '>
         <button onClick={handler} className='bg-transparent rounded-md p-1'>Read</button>
