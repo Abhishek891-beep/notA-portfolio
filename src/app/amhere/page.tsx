@@ -1,8 +1,15 @@
+import Image from 'next/image'
 import React from 'react'
 
 function page() {
+
+
+
   return (
-    <div>page</div>
+    <div  style={{ backgroundImage: `url("/mybg2.jpg")`}} className='w-screen h-screen  bg-contain'>
+  hi there
+  heeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+    </div>
   )
 }
 

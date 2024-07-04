@@ -36,7 +36,9 @@ function Page() {
           <div className='flex justify-end bg-transparent h-14  w-24'><button className="bg-transparent w-24 h-14"   onClick={handler2}>.</button> </div>
           </div>
         </div>
-
+        <div className='bg-transparent relative h-full w-36 '>
+            <button className='w-full h-full bg-transparent' onClick={handler2}><span className='bg-white p-2 rounded-lg'>hi there</span></button>
+        </div>
     </div>
     </>
   )
