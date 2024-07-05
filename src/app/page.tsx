@@ -1,4 +1,5 @@
 "use client"
+
 import Image from "next/image";
 import Rectangle from "../components/rectangle";
 import Jkrishnamurthy from "../components/Jkrishnamurthy";

@@ -11,9 +11,12 @@ function Page() {
     const [opinion , setOpinion] = useState("");
 
     const handler =async ()=> {
+        const apiEndpoint = process.env.NEXT_AUTH_URL;
+        
 
         try{
-            const res = await fetch("http://localhost:3000/api/whoareu" , {
+            const res = await fetch(`${apiEndpoint}api/whoareu` , {
+                cache: "no-store",
                 method: "POST",
                 headers : {
                     "Content-Type" : "application/json"
