@@ -6,7 +6,7 @@ import Link from "next/link";
 import background from "../../public/bgc.jpg"
 import Header from "@/components/Header";
 import Grid from "@/components/Grids";
-
+import Whoareu from "@/components/Whoareu";
 
 
 
@@ -15,9 +15,12 @@ export default function Home() {
 
   return (
     <>
-      <div  className="bg-black"  >
+      <div  className=""  >
       <Header></Header>
+  
+
       <Grid/>
+
       </div>
 {/* 
         <div  style={{ 

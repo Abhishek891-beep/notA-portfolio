@@ -17,7 +17,7 @@ function MobileMenu() {
         </div>
         {isOpen && (
             <div className='absolute left-0 w-full h-[calc(100vh-96px)] bg-transparent flex flex-col items-center justify-center gap-8 font-medium text-xl z-10'> 
-                <div><Link href='/sj'>Home</Link></div>
+                <div><Link className='font-bold text-3xl' href='/whoareu'>whoU</Link></div>
             </div>
         )}
     </div>
