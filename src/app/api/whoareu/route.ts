@@ -32,9 +32,3 @@ export async function POST(req: Request , res: Response) {
     }
 
 }
-
-export async function GET(res:NextApiResponse){
-
-    return Response.json({msg : "heyya"});
-
-}
