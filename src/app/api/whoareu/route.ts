@@ -29,6 +29,7 @@ export async function POST(req: Request , res: Response) {
         return Response.json({msg : "user created"})
     }catch(e){
         console.log(e);
+        Response.json({msg: "error during inserting into database"})
     }
 
 }
