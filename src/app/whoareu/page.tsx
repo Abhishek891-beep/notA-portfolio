@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useState } from 'react'
-// import prisma from "@/lib/client";
+import prisma from "@/lib/client";
 import { ThankYou } from '@/components/Thanku';
 
 function Page() {
@@ -15,15 +15,15 @@ function Page() {
         
 
         try{
-            // const res = await fetch(`${apiEndpoint}api/whoareu` , {
-            //     cache: "no-store",
-            //     method: "POST",
-            //     headers : {
-            //         "Content-Type" : "application/json"
-            //     },
-            //     body: JSON.stringify({name : name , email:email, opinion:opinion})
-            // })
-            // const data = await res.json();
+            const res = await fetch(`${apiEndpoint}api/whoareu` , {
+                cache: "no-store",
+                method: "POST",
+                headers : {
+                    "Content-Type" : "application/json"
+                },
+                body: JSON.stringify({name : name , email:email, opinion:opinion})
+            })
+            const data = await res.json();
             setOpen(!open);
 
         }catch(e)

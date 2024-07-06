@@ -1,4 +1,4 @@
-// import prisma from "@/lib/client"
+import prisma from "@/lib/client"
 import { NextApiRequest, NextApiResponse } from "next";
 import z from "zod";
 
@@ -18,15 +18,15 @@ export async function POST(req: Request , res: Response) {
     console.log(bodyy);
     
     try {
-        // const ValidData = UserSchema.parse(body);
-        // const user = await prisma.user.create({
-        //     data : {
-        //         name : bodyy.name  ,
-        //         email : bodyy.email ,
-        //         opinion :bodyy.opinion
-        //     }
-        // })
-        // return Response.json({msg : "user created"})
+        const ValidData = UserSchema.parse(bodyy);
+        const user = await prisma.user.create({
+            data : {
+                name : bodyy.name  ,
+                email : bodyy.email ,
+                opinion :bodyy.opinion
+            }
+        })
+        return Response.json({msg : "user created"})
     }catch(e){
         console.log(e);
     }
