@@ -31,5 +31,5 @@ export async function POST(req: Request , res: Response) {
         console.log(e);
         Response.json({msg: "error during inserting into database"})
     }
-
 }
+

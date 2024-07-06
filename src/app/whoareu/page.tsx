@@ -15,7 +15,7 @@ function Page() {
         
 
         try{
-            const res = await fetch(`${apiEndpoint}api/whoareu` , {
+            const res = await fetch(`/api/whoareu` , {
                 cache: "no-store",
                 method: "POST",
                 headers : {
