@@ -49,6 +49,8 @@ function Page() {
                     <input className='rounded-lg p-1' type="text" name="email" onChange={(e)=> setEmail(e.target.value)}  placeholder='email'  />
                     <input className='rounded-lg h-12  p-1' type="text" onChange={(e)=> setOpinion(e.target.value)} placeholder='what do you think ??'  />
                     <button  onClick={handler} className='bg-black text-white rounded-xl p-2'>donee</button>
+                    <h1>fk this i couldnt connect this db thing when i deployed to vercel.</h1>
+                    <h2>i will never know who u r , unless u hmu.</h2>
             </div> :   <ThankYou/>  }
 
     </div>
