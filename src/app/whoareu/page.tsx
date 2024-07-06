@@ -11,7 +11,7 @@ function Page() {
     const [opinion , setOpinion] = useState("");
 
     const handler =async ()=> {
-        const apiEndpoint = process.env.NEXT_AUTH_URL;
+        const apiEndpoint = process.env.NEXT_PUBLIC_BASE_API_URL;
         
         if(!apiEndpoint){
             return null;
