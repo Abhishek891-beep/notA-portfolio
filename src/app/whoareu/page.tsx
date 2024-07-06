@@ -13,9 +13,12 @@ function Page() {
     const handler =async ()=> {
         const apiEndpoint = process.env.NEXT_AUTH_URL;
         
+        if(!apiEndpoint){
+            return null;
+        }
 
         try{
-            const res = await fetch(`/api/whoareu` , {
+            const res = await fetch(`${apiEndpoint}/api/whoareu` , {
                 cache: "no-store",
                 method: "POST",
                 headers : {
