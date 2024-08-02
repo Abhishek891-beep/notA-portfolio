@@ -6,41 +6,43 @@ import Head from 'next/head';
 import { Germania_One } from "next/font/google";
 import Jkrishnamurthy from "./Jkrishnamurthy";
 import SteveJobs from "./SteveJobs"
+import Geohot from "./Geohot"
+import Fred from "./Fred";
 
-const repeat =   {
-    href: "/topic1" ,
-    src : "/k.jpg"
-  }
+// const repeat =   {
+//     href: "/topic1" ,
+//     src : "/k.jpg"
+//   }
 
-const repeat2 = {
-    href : "/topic1",
-    src : "/dino.jpg"
-}
-const repeat3 = {
-    href : "/topic1",
-    src : "/sp.jpg"
-}
-const repeat4 = {
-    href : "/topic1",
-    src : "/gud.png"
-}
+// const repeat2 = {
+//     href : "/topic1",
+//     src : "/dino.jpg"
+// }
+// const repeat3 = {
+//     href : "/topic1",
+//     src : "/sp.jpg"
+// }
+// const repeat4 = {
+//     href : "/topic1",
+//     src : "/gud.png"
+// }
 
 
   
-  const data = [ {
-    href : "topic1" ,
-    src : "/k.jpg"
-  } ];
+//   const data = [ {
+//     href : "topic1" ,
+//     src : "/k.jpg"
+//   } ];
   
-  let  me = 0 ;
+//   let  me = 0 ;
   
-  for( me ; me < 25; me++)
-  {
-    data.push(repeat);
-    data.push(repeat2)
-    data.push(repeat3)
-    data.push(repeat4)
-  }
+//   for( me ; me < 25; me++)
+//   {
+//     data.push(repeat);
+//     data.push(repeat2)
+//     data.push(repeat3)
+//     data.push(repeat4)
+//   }
   
 //   console.log(data)
   
@@ -84,12 +86,13 @@ const repeat4 = {
 
                         {Array.from( {length: 100} , (_ , i)=> (
                             <div className={`   `} key={i}>
-                               {i % 2 === 0 ?  <Jkrishnamurthy/> : "" }
-                               {i % 2 !== 0 ?  <SteveJobs/> : "" }
-                               
+                              {i % 2 == 0 ? <SteveJobs/> : ""}
+                               {i % 2 != 0 ?  <Jkrishnamurthy/> : "" }
                                {i}
                             </div>
                         ) )}
+
+                        
                     </div>
                 </div>
                 </div>
@@ -100,3 +103,8 @@ const repeat4 = {
   };
 
 export default Grid;
+
+// 6 12 18 24 30 --> geo 
+// jk = 50 - 16  = 34 = 2 4  8 10 12 
+// geo = 16 
+// sj = 1 3 5 7 

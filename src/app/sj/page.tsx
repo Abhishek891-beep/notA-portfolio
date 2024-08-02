@@ -13,15 +13,15 @@ function Page() {
     <>
     <div  style={{ backgroundImage: `url("/sj1.jpg")`}} className='w-screen h-screen md:bg-contain  bg-center p-20  flex flex-col items-center  '>
         <div className='bg-transparent flex rounded-xl p-1 justify-between  w-full '>
-        <button onClick={handler2} className='bg-slate-600 text-white rounded-md p-1'>Read.... </button>
-        <button onClick={handler2} className='bg-slate-600 text-white rounded-md p-1'>Read.... </button>
-        <button onClick={handler2} className='bg-slate-600 text-white rounded-md p-1'>Read.... </button>
+        <button onClick={handler2} className='bg-transparent text-white rounded-md p-1'>Read.... </button>
+        <button onClick={handler2} className='bg-transparent border text-white rounded-md p-1'>Read.... </button>
+        <button onClick={handler2} className='bg-transparent border text-white rounded-md p-1'>Read.... </button>
         </div>
 
           { read2 &&   <div className='w-full h-96 bg-transparent grid grid-cols-3 '>
             <div className='bg-transparent'> </div>
             <div className='bg-transparen'></div>
-            <div className='bg-black rounded-xl text-white overflow-scroll p-4 no-scrollbar'><div className='py-2'>MR.JidduKRishnamurthy </div>  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, tenetur dolorem. Qui corrupti consequatur placeat tenetur unde optio, reiciendis molestiae perspiciatis? Distinctio, blanditiis a odit itaque asperiores reprehenderit quam aliquam. Officiis maxime, dolore quod consequuntur architecto impedit voluptas voluptatum eligendi tempora nisi unde veritatis dicta at repellendus deserunt ullam nulla explicabo, temporibus eaque a blanditiis ratione cum odit sint. Natus deleniti vitae saepe dolor modi possimus placeat, ratione optio earum in iste blanditiis quibusdam magnam itaque quo! Animi, accusantium quo similique vero voluptatum, ratione iusto, ullam ipsa eveniet debitis maxime eum ex? Blanditiis perspiciatis rerum laudantium suscipit illum dolor impedit in accusantium labore nihil consequatur ducimus officiis, harum a pariatur et cupiditate, itaque nam dicta dolore. Laudantium quia sequi repellendus beatae esse, aspernatur dolores asperiores officiis ratione obcaecati accusamus tempore, dignissimos nesciunt quos? Inventore eius animi sequi ut. Placeat, qui earum cum veniam architecto maxime ad error at expedita ut nisi, nam deleniti soluta laudantium, velit vel fuga neque ratione provident. Itaque ut earum explicabo repudiandae cupiditate, eligendi nostrum commodi fugiat dolore ipsum dolorem eius soluta consectetur tenetur doloribus reprehenderit! Nobis tempora quisquam, ducimus, vel praesentium quas magnam quasi, aliquid adipisci nesciunt facere distinctio odio voluptatibus itaque harum a fuga <span><button className='bg-white text-black font-bold p-1 rounded-xl' onClick={handler2}>Close!</button></span>  <span className=' bg-white text-black p-2 rounded-xl font-bold'><Link href="/">Home!</Link></span></div>
+            <div className='bg-black rounded-xl text-white overflow-scroll p-4 no-scrollbar'><div className='py-2'>𝚂𝚝𝚎𝚟𝚎 𝙹𝚘𝚋𝚜</div> 𝚒 𝚔𝚗𝚘𝚠 𝚝𝚑𝚒𝚜 𝚐𝚞𝚢 , 𝚒 𝚕𝚘𝚟𝚎 𝚝𝚑𝚒𝚜 𝚐𝚞𝚢 , 𝚒 𝚠𝚒𝚕𝚕 𝚠𝚛𝚒𝚝𝚎 𝚖𝚘𝚛𝚎 𝚊𝚋𝚘𝚞𝚝 𝚝𝚑𝚒𝚜 𝚐𝚞𝚢 𝚊𝚜 𝚜𝚘𝚘𝚗 𝚊𝚜 𝚒  𝚌𝚛𝚘𝚜𝚜 my 𝟽𝟻 % 𝚊𝚝𝚝𝚎𝚗𝚍𝚊𝚗𝚌𝚎 . <span><button className='bg-transparent text-white block font-bold p-2 rounded-xl' onClick={handler2}>Close!</button></span>  <span className=' bg-transparent text-whtie p-2 rounded-xl font-bold'><Link href="/">Home!</Link></span></div>
           </div>  }
     </div>
     </>
